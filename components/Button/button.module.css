@@ -1,0 +1,50 @@
+.button-component {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  /* font-size: 1rem; */
+  transition: background-color 0.3s ease;
+}
+
+.button-component:hover {
+  opacity: 0.8;
+}
+
+.button-home {
+background-color:#f5f5f5;
+height:150px;
+width:353px;
+border-radius:100px;
+padding:24px 10px;
+display:flex;
+flex-direction:column;
+gap:8px;
+border-style:hidden;
+outline:none;
+color:#72a17d;
+font-size:28px;
+font-family:"Inter", sans-serif;
+line-height:36px;
+margin-top: 10px;
+}
+
+.button-signup {
+  background-color:var(--theme-secondary);
+  width:353px;
+  border-radius:10px;
+  height: 65px;
+  color: var(--text-secondary);
+  text-transform: uppercase;
+}
+
+.button-login {
+  background-color:var(--background);
+  width:353px;
+  border-radius:10px;
+  height: 65px;
+  color: var(--text-primary);
+  text-transform: uppercase;
+}
+
+

@@ -1,0 +1,227 @@
+.bannerContainer {
+  background-color: var(--theme-main);
+  height: fit-content;
+  display: flex;
+  /* align-items: center;
+  justify-content: center; */
+  flex-direction: row;
+}
+
+.titleContainer {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.title {
+  border-style: hidden;
+  outline: none;
+  align-self: center;
+  display: block;
+  margin: auto;
+  width:fit-content;
+  justify-content: center;
+}
+.titleText {
+  color:var(--text-secondary);
+  vertical-align:middle;
+  font-size:64px;
+  font-family:var(--font-header);
+  line-height:auto;
+  width:fit-content;
+  z-index: 9999;
+}
+.contentContainer {
+  padding: 25px 200px;
+}
+.cardContainer {
+  background-color: #372476;
+  display: grid;
+  color: #000000;
+  border-radius: 12px;
+}
+
+.textContainer {
+  height: 169px;
+  width: 626px;
+  border-radius: 12px;
+  padding: 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+.callToAction {
+  color: #f5f5f5;
+  font-size: 24px;
+  font-family: "Inter", sans-serif;
+  padding: 25px;
+}
+
+.imageContainer {
+  height: 366px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  padding: 0px 20px;
+}
+
+.mainBirdImg {
+  height: 700px;
+  width: auto;
+  display: block;
+  margin-left: auto;
+}
+
+.birdFeedImg {
+  height: 366px;
+  width: auto;
+  border-radius: 12px;
+  position: relative;
+  border-radius: 8px;
+  filter: drop-shadow(-5px 5px 4px rgba(0, 0, 0, 0.25));
+  top: 25px;
+}
+
+.buttonContainer {
+  display: flex;
+  flex-direction: column;
+  /* width: fit-content; */
+  /* align-self: center; */
+  font-family: var(--font-text);
+  gap: 20px;
+  font-weight: bold;
+}
+
+.statsContainer {
+  display: flex;
+  justify-content: center;
+}
+
+.statsGrid {
+  width: 80vw;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+.statsTitle {
+  color: var(--theme-secondary);
+  font-size:72px;
+  font-family:var(--font-text);
+  font-weight:800;
+  
+}
+
+.statsSubtitle {
+  color: var(--theme-secondary);
+  text-align:center;
+  font-size:40px;
+  font-family:var(--font-text);
+}
+.statsCell {
+  display:block;
+  margin: auto;
+  width:fit-content;
+  line-height: 1;
+  padding: 15px 0px;
+}
+
+.overviewContainer {
+  background-color: var(--theme-main);
+  height: auto;
+  padding-bottom: 35px;
+}
+
+.overviewGrid {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  align-items: center;
+}
+
+.overviewText {
+  color: var(--text-secondary);
+  font-family: var(--font-text);
+  font-size: 20px;
+  padding-left: 50px;
+}
+
+.overviewImgContainer {
+justify-content: center;
+margin-right: 0px;
+}
+
+.birdFeedImg{
+  height: auto;
+  width: auto;
+  margin:0px 25px;
+}
+
+/* Small devices such as large phones (640px and up) */
+@media only screen and (min-width: 640px) {
+  .contentContainer {
+    padding: 10px 50px;
+  }
+  .textContainer {
+    width: auto;
+  }
+  .cardContainer {
+    grid-template-columns: 1fr;
+    /* height: auto; */
+  }
+  .callToAction {
+    width: auto;
+  }
+  .mainBirdImg {
+    height: fit-content;
+  }
+}
+
+/* Medium devices such as tablets (768px and up) */
+@media only screen and (min-width: 768px) {
+  .contentContainer {
+    padding: 10px 100px;
+  }
+  .textContainer {
+    width: auto;
+  }
+  .cardContainer {
+    grid-template-columns: 1fr;
+    /* height: auto; */
+  }
+  .mainBirdImg {
+    height: fit-content;
+  }
+}
+
+/* Large devices such as laptops (1024px and up) */
+@media only screen and (min-width: 1024px) {
+  .contentContainer {
+    padding: 10px 100px;
+  }
+  .textContainer {
+    width: fit-content;
+  }
+
+  .cardContainer {
+    grid-template-columns: 1fr;
+  }
+  .mainBirdImg {
+    height: fit-content;
+  }
+}
+
+/* Largest devices such as desktops (1280px and up) */
+@media only screen and (min-width: 1280px) {
+  .contentContainer {
+    padding: 25px 200px;
+  }
+  .textContainer {
+    width: fit-content;
+  }
+  .cardContainer {
+    grid-template-columns: 1.5fr 1fr;
+  }
+  .mainBirdImg {
+    height: fit-content;
+  }
+}
