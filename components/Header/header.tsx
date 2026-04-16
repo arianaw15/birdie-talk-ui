@@ -19,8 +19,7 @@ export default function Header({ loggedIn = false }: { loggedIn?: boolean }) {
   return (
     <header className={styles.mainheader}>
       <div className={styles.logo}>
-        {/* <img src ="/birdy-talk-logo.png" alt="Birdy Talk Logo" className={styles.logoImg}></img> */}
-        {pageContent.header.mainTitle}
+        <a href="/">{pageContent.header.mainTitle}</a>
       </div>
       <DesktopNavBar loggedIn={loggedIn} />
       <MobileNavBar loggedIn={loggedIn} />
