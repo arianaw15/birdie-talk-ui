@@ -1,0 +1,159 @@
+.bannerContainer {
+  background-color: var(--theme-main);
+  height: fit-content;
+  display: flex;
+  /* align-items: center;
+  justify-content: center; */
+  flex-direction: row;
+}
+
+.titleContainer {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.title {
+  color: #ffffff;
+  border-style: hidden;
+  outline: none;
+  align-self: center;
+  padding-left: 50px;
+}
+.titleText {
+  font-family: var(--font-header);
+  font-size: 72px;
+  letter-spacing: 0px;
+}
+.contentContainer {
+  padding: 25px 200px;
+}
+.cardContainer {
+  background-color: #372476;
+  display: grid;
+  color: #000000;
+  border-radius: 12px;
+}
+
+.textContainer {
+  height: 169px;
+  width: 626px;
+  border-radius: 12px;
+  padding: 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+.callToAction {
+  color: #f5f5f5;
+  font-size: 24px;
+  font-family: "Inter", sans-serif;
+  padding: 25px;
+}
+
+.imageContainer {
+  height: 366px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  padding: 0px 20px;
+}
+
+.mainBirdImg {
+  height: 700px;
+  width: auto;
+  display: block;
+  margin-left: auto;
+}
+
+.birdFeedImg {
+  height: 366px;
+  width: auto;
+  border-radius: 12px;
+  position: relative;
+  border-radius: 8px;
+  filter: drop-shadow(-5px 5px 4px rgba(0, 0, 0, 0.25));
+  top: 25px;
+}
+
+.buttonContainer {
+  display: flex;
+  flex-direction: column;
+  width: fit-content;
+  align-self: center;
+  font-family: var(--font-text);
+  gap: 20px;
+  font-weight: bold;
+}
+
+/* Small devices such as large phones (640px and up) */
+@media only screen and (min-width: 640px) {
+  .contentContainer {
+    padding: 10px 50px;
+  }
+  .textContainer {
+    width: auto;
+  }
+  .cardContainer {
+    grid-template-columns: 1fr;
+    /* height: auto; */
+  }
+  .callToAction {
+    width: auto;
+  }
+  .mainBirdImg {
+    height: fit-content;
+  }
+}
+
+/* Medium devices such as tablets (768px and up) */
+@media only screen and (min-width: 768px) {
+  .contentContainer {
+    padding: 10px 100px;
+  }
+  .textContainer {
+    width: auto;
+  }
+  .cardContainer {
+    grid-template-columns: 1fr;
+    /* height: auto; */
+  }
+  .mainBirdImg {
+    height: fit-content;
+  }
+}
+
+/* Large devices such as laptops (1024px and up) */
+@media only screen and (min-width: 1024px) {
+  .contentContainer {
+    padding: 10px 100px;
+  }
+  .textContainer {
+    width: fit-content;
+  }
+
+  .cardContainer {
+    grid-template-columns: 1fr;
+  }
+  .mainBirdImg {
+    height: fit-content;
+  }
+}
+
+/* Largest devices such as desktops (1280px and up) */
+@media only screen and (min-width: 1280px) {
+  .contentContainer {
+    padding: 25px 200px;
+  }
+  .textContainer {
+    width: fit-content;
+  }
+  .cardContainer {
+    grid-template-columns: 1.5fr 1fr;
+  }
+  .mainBirdImg {
+    height: fit-content;
+  }
+}

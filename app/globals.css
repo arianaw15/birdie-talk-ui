@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import "tailwindcss";
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+  --theme-main: #233248;
+  --theme-secondary: #ca3e00;
+  --theme-accent: #4e4e4e;
+  
+  /* Fonts */
+  --font-header: "Playfair Display", serif;
+  --font-text: "Inter", sans-serif;
+  --font-label: "Poppins", sans-serif;
+
+  /*Text colors */
+  --text-primary: #4e4e4e;
+  --text-secondary: #ffffff;
+  --text-button-green: #72a17d;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #ffffff;
+    --foreground: #171717;
+    /* --background: #0a0a0a;
+    --foreground: #ededed; */
+  }
+}
+
+@media only screen and (min-width:480px) {}
+
+/* Small devices such as large phones (640px and up) */
+@media only screen and (min-width: 640px) {}
+
+/* Medium devices such as tablets (768px and up) */
+@media only screen and (min-width: 768px) {}
+
+/* Large devices such as laptops (1024px and up) */
+@media only screen and (min-width: 1024px) {}
+
+/* Largest devices such as desktops (1280px and up) */
+@media only screen and (min-width: 1280px) {
+
+}
+
+body {
+  background: var(--background);
+  /* background-image: url("/background.png"); */
+  background-size: cover;
+  background-repeat: no-repeat;
+  /*background-repeat: no-repeat; */
+  color: var(--foreground);
+  /* font-family: Arial, Helvetica, sans-serif; */
+}
+
+.layoutcontainer {
+  height: 100vh;
+  padding: 0px;
+}
