@@ -1,0 +1,70 @@
+.desktopNav {
+  height: 40px;
+  padding: 0px 50px;
+  display: flex;
+}
+
+.desktopNav li {
+  font-family: var(--font-text);
+  font-size: 16px;
+  text-transform: uppercase;
+
+}
+
+.desktopNav a {
+border-radius: 8px;
+  height: 32px;
+  width: fit-content;
+  top: 0px;
+  border-radius: 8px;
+  padding: 12px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  /* gap: 12px; */
+  border-style: hidden;
+  outline: none;
+
+}
+
+.desktopNav a:hover {
+  background-color: var(--theme-accent);
+}
+
+@media only screen and (max-width:640px) {
+  .desktopNav {
+    display: none;
+  }
+}
+
+/* Small devices such as large phones (640px and up) */
+@media only screen and (min-width: 640px) {
+  .desktopNav {
+    display: none;
+  }
+}
+
+/* Medium devices such as tablets (768px and up) */
+@media only screen and (min-width: 768px) {}
+
+@media only screen and (min-width: 990px) {
+}
+
+/* Large devices such as laptops (1024px and up) */
+@media only screen and (min-width: 1024px) {
+  .desktopNav{
+    display: flex;
+    justify-content: flex-end;
+    align-items: baseline;
+  }
+}
+
+/* Largest devices such as desktops (1280px and up) */
+@media only screen and (min-width: 1280px) {
+  .desktopNav{
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+  }
+}

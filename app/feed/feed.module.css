@@ -1,0 +1,125 @@
+.container {
+}
+.bannerContainer {
+  background-color: #72a17d;
+  height: 414px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+}
+
+.titleContainer {
+  width: 579px;
+  text-align: center;
+}
+.title {
+  color: #ffffff;
+  font-size: 72px;
+  font-family: "Inter", sans-serif;
+  letter-spacing: -3px;
+  border-style: hidden;
+  outline: none;
+}
+.subtitle {
+  color: #f2f2f2;
+  font-size: 32px;
+  font-family: "Inter", sans-serif;
+  border-style: hidden;
+  outline: none;
+}
+.contentContainer {
+  padding: 25px 200px;
+}
+.cardContainer {
+  background-color: #372476;
+  display: grid;
+  /* grid-template-columns: 1.5fr 1fr; */
+  align-items: center;
+  color: #000000;
+  height: 366px;
+  border-radius: 12px;
+}
+
+.textContainer {
+  height: 169px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  place-self: center;
+  text-align: center;
+  padding: 0px 20px;
+}
+
+.callToAction {
+  color: #f5f5f5;
+  font-size: 24px;
+  font-family: Inter;
+  padding: 0px 0px 10px 0px;
+}
+
+.imageContainer {
+  height: 366px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  padding: 0px 20px;
+}
+
+/* Small devices such as large phones (640px and up) */
+@media only screen and (min-width: 640px) {
+  .contentContainer {
+    padding: 10px 5px;
+  }
+  .textContainer {
+  width: 200px;
+}
+.cardContainer {
+    grid-template-columns: 1fr;
+    height: auto;
+}
+}
+
+/* Medium devices such as tablets (768px and up) */
+@media only screen and (min-width: 768px) {
+  .contentContainer {
+    padding: 10px 5px;
+  }
+  .textContainer {
+  width: auto;
+}
+.cardContainer {
+    grid-template-columns: 1fr;
+    height: auto;
+}
+}
+
+/* Large devices such as laptops (1024px and up) */
+@media only screen and (min-width: 1024px) {
+  .contentContainer {
+    padding: 10px 100px;
+  }
+  .textContainer {
+    width: fit-content;
+}
+
+.cardContainer {
+    grid-template-columns: 1.5fr 1fr;
+}
+
+
+}
+
+/* Largest devices such as desktops (1280px and up) */
+@media only screen and (min-width: 1280px) {
+  .contentContainer {
+    padding: 25px 200px;
+  }
+  .textContainer {
+    width: fit-content;
+}
+.cardContainer {
+    grid-template-columns: 1.5fr 1fr;
+}
+}
