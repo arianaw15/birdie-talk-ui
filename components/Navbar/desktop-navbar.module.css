@@ -1,7 +1,8 @@
 .desktopNav {
-  height: 40px;
+  /* height: 40px; */
   padding: 0px 50px;
   display: flex;
+  
 }
 
 .desktopNav li {
@@ -12,8 +13,8 @@
 }
 
 .desktopNav a {
-border-radius: 8px;
-  height: 32px;
+  border-radius: 8px;
+  /* height: 32px; */
   width: fit-content;
   top: 0px;
   border-radius: 8px;
@@ -26,6 +27,10 @@ border-radius: 8px;
   border-style: hidden;
   outline: none;
 
+}
+
+.navItemLoginBtn {
+  color: var(--theme-secondary);
 }
 
 .desktopNav a:hover {

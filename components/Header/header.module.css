@@ -1,25 +1,23 @@
 .mainheader {
   background-color: var(--theme-main);
   display: grid;
-  align-items: center; /* Vertically centers items within the header */
+  align-items: center;
   color: var(--text-secondary);
-  padding: 0;
   width: 100vw;
-  padding: 0px 10px;
+  padding: 0px 30px;
+  
 }
 
 .logo {
-  text-align: center;
-  vertical-align: text-middle;
-  font-size: 72px;
-  font-family: var(--font-header);
-  letter-spacing: 0px;
-  display: flex;
-  align-items: center;
-  border-style: hidden;
-  outline: none;
-  font-weight: bold;
-  padding: 0px 50px;
+  color:var(--text-secondary);
+  text-align:center;
+  vertical-align:middle;
+  font-size:64px;
+  font-family:var(--font-header);
+  line-height:auto;
+  width:fit-content;
+  z-index: 9999;
+  padding: 0px 30px;
 }
 
 .logoImg {
