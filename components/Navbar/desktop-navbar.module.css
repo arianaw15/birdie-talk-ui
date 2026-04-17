@@ -18,7 +18,7 @@
   width: fit-content;
   top: 0px;
   border-radius: 8px;
-  padding: 12px;
+  padding: 3px 12px;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -31,10 +31,15 @@
 
 .navItemLoginBtn {
   color: var(--theme-secondary);
+  background-color: var(--background);
+  border-radius: 8px;
+  font-weight: 700;
+  padding: 0px 10px;
+  margin-left: 50px;
 }
 
 .desktopNav a:hover {
-  background-color: var(--theme-accent);
+  opacity: 0.2;
 }
 
 @media only screen and (max-width:640px) {
