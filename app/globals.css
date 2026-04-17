@@ -14,8 +14,11 @@
   --font-label: "Poppins", sans-serif;
 
   /*Text colors */
-  --text-primary: #4e4e4e;
+  --text-primary: black;
   --text-secondary: #f6f6f6;
+  --text-tertiary: #ca3e00;
+  --text-subtitle: #7E7976;
+  --text-description: #A6A6A6;
   --text-button-green: #72a17d;
 }
 
@@ -64,4 +67,5 @@ body {
 .layoutcontainer {
   height: 100vh;
   padding: 0px;
+  margin: 0px;
 }

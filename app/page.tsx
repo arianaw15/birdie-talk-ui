@@ -22,7 +22,6 @@ const handleLoginClick = (event: React.MouseEvent<HTMLButtonElement>) => {
              <div className={styles.titleContainer}>
               <img src="/secretary-bird-2.png" alt="Bird Feed" className={styles.mainBirdImg}></img>
         <div className={styles.title}><div className={styles.titleText}>{pageContent.homePage.mainTitle}</div>
-          {/* <div className={styles.subtitle}>{pageContent.homePage.subHeader}</div> */}
           <div className={styles.buttonContainer}>
               <Button variant="signup" onClick={handleSignupClick}>{pageContent.homePage.signupButtonText}</Button>
               <Button variant="login" onClick={handleLoginClick}>{pageContent.homePage.loginButtonText}</Button>

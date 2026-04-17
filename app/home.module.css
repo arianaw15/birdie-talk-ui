@@ -33,30 +33,6 @@
 .contentContainer {
   padding: 25px 200px;
 }
-.cardContainer {
-  background-color: #372476;
-  display: grid;
-  color: #000000;
-  border-radius: 12px;
-}
-
-.textContainer {
-  height: 169px;
-  width: 626px;
-  border-radius: 12px;
-  padding: 0px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  position: relative;
-}
-
-.callToAction {
-  color: #f5f5f5;
-  font-size: 24px;
-  font-family: "Inter", sans-serif;
-  padding: 25px;
-}
 
 .imageContainer {
   height: 366px;
@@ -75,13 +51,14 @@
 }
 
 .birdFeedImg {
-  height: 366px;
+  height: auto;
   width: auto;
   border-radius: 12px;
   position: relative;
   border-radius: 8px;
   filter: drop-shadow(-5px 5px 4px rgba(0, 0, 0, 0.25));
   top: 25px;
+  left: 50px;
 }
 
 .buttonContainer {
@@ -105,7 +82,7 @@
   grid-template-columns: 1fr 1fr 1fr;
 }
 .statsTitle {
-  color: var(--theme-secondary);
+  color: var(--text-tertiary);
   font-size:72px;
   font-family:var(--font-text);
   font-weight:800;
@@ -113,7 +90,7 @@
 }
 
 .statsSubtitle {
-  color: var(--theme-secondary);
+  color: var(--text-tertiary);
   text-align:center;
   font-size:40px;
   font-family:var(--font-text);
@@ -150,11 +127,11 @@ justify-content: center;
 margin-right: 0px;
 }
 
-.birdFeedImg{
+/* .birdFeedImg{
   height: auto;
   width: auto;
   margin:0px 25px;
-}
+} */
 
 /* Small devices such as large phones (640px and up) */
 @media only screen and (min-width: 640px) {
