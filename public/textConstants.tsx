@@ -16,6 +16,10 @@ export const pageContent = {
     mainTitle: "Birdy Talk",
     navLinksLoggedIn: [{href: "/", label: "Home"}, {href: "/birds", label: "Birds"}, {href: "/feed", label: "Bird Feed"}, {href: "/account", label: "Account"}],
     navLinksLoggedOut: [{href: "/about", label: "About"}, {href: "/contact", label: "Contact"}, {href: "/conservation", label: "Conservation"}],
+  },
+  login: {
+    mainTitle: "Welcome back!",
+    signInButton: "Sign In"
   }
   // Add more pages/sections as needed
 };

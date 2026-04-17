@@ -47,4 +47,12 @@ margin-top: 10px;
   text-transform: uppercase;
 }
 
+.button-google-login {
+  background-color:#4586F6;
+  width: auto;
+  border-radius:10px;
+  height: 40px;
+  color: white;
+}
+
 
