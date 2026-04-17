@@ -1,0 +1,17 @@
+.formContainer {
+    justify-content: center;
+}
+
+.inputGroup {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 15px;
+}
+
+.inputGroup input {
+    border: 1px solid #d9d9d9;
+    padding: 15px 12px;
+    font: var(--font-text);
+    border-radius: 8px;
+    height: 40px;
+}

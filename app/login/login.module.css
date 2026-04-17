@@ -1,0 +1,34 @@
+.container {
+    background-color: var(--login-background);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* Full viewport height */
+}
+
+.loginFormContainer {
+    background-color: white;
+    width: fit-content;
+    /* height: auto; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    padding: 100px;
+}
+
+.title {
+    font-family: var(--font-text);
+    font-size: 48px;
+    color: var(--text-primary);
+    font-weight: 700;
+    text-align: center;
+    width: 454px;
+}
+
+.form {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    width: 454px;
+}
