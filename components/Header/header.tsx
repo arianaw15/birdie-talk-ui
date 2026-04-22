@@ -7,6 +7,7 @@ import { pageContent } from "@/public/textConstants";
 import MobileNavBar from "../Navbar/mobile-navbar";
 import DesktopNavBar from "../Navbar/desktop-navbar";
 import { usePathname } from 'next/navigation';
+import { useAuth } from "../../app/auth-context";
 
 // const imageStyle = {
 //   borderRadius: '50%',
@@ -17,14 +18,20 @@ import { usePathname } from 'next/navigation';
 //   justifyContent: 'center',
 // }
 
-export default function Header({ loggedIn = false }: { loggedIn?: boolean }) {
+export default function Header() {
   const pathname = usePathname();
+  const { loggedIn } = useAuth();
 
   const hiddenRoutes = ["/login", "/signup"];
 
   if (pathname && hiddenRoutes.includes(pathname)) {
     return null; // Don't render the header on login and signup pages
   }
+
+  if (loggedIn) {
+    return null;
+  }
+
   return (
     <header className={styles.mainheader}>
       <div className={styles.logo}>

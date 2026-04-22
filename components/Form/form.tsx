@@ -32,7 +32,7 @@ export default function Form({formFields, handleClick}: FormProps) {
     <form onSubmit={handleSubmit} style={{ display: 'flex', flexDirection: 'column', width: '300px' }} className={styles.formContainer}>
        {formFields && formFields.map((field: FormInfo) => {
         return(
-            <div className={styles.inputGroup} id={field.id}>
+            <div className={styles.inputGroup} id={field.id} key={field.id}>
                 {field.label && <label>{field.label}</label>}
             <input id={field.id} type={field.type} placeholder={field.placeholder} />
             </ div>

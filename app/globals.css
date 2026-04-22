@@ -67,6 +67,15 @@ body {
 
 .layoutcontainer {
   height: 100vh;
+  width: 100vw;
   padding: 0px;
   margin: 0px;
+  /* display: flex; */
+
+}
+
+.main-content {
+  display: flex;
+  flex: 1;
+  flex-direction: row;
 }

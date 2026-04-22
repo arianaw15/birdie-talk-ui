@@ -55,4 +55,22 @@ margin-top: 10px;
   color: white;
 }
 
+.button-icon {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.button-post {
+  background-color: var(--theme-secondary);
+  color: white;
+  width: 76px;
+  padding: 5px 16px;
+  border-radius: 5px;
+  font-family: var(--font-text);
+  font-size: 14px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
 

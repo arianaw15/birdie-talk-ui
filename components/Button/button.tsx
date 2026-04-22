@@ -1,4 +1,5 @@
 import styles from './button.module.css';
+
 interface ButtonProps {
   children: any;
   variant?: string;
@@ -11,7 +12,7 @@ export default function Button({ children, variant, onClick, type}: ButtonProps)
   const combinedClasses = `${baseClasses} ${variantClass}`
   return (
     <button className={combinedClasses} type={type || "button"} onClick={onClick}>
-      {children}
+     {children}
     </button>
   );
 }
