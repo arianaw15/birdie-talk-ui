@@ -1,0 +1,16 @@
+.input-component:focus {
+outline: none;
+}
+.input-component {
+    width: 100%;
+} 
+
+.input-post {
+    width: 100%;
+    height: auto;
+    margin-left: -20px;
+    padding: 5px 5px 0px 5px;
+    border-radius: 5px;
+    background-color: var(--background);
+    border: 1px solid #e4e6e7;
+}

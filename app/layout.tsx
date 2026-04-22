@@ -1,18 +1,20 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
-import DesktopHeader from "@/components/Header/header";
 import { AppRouterCacheProvider } from '@mui/material-nextjs/v15-appRouter';
+import { AuthProvider } from './auth-context';
+import DesktopHeader from "@/components/Header/header";
+import SideNav from "@/components/SideNav/side-nav";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
+// const geistSans = Geist({
+//   variable: "--font-geist-sans",
+//   subsets: ["latin"],
+// });
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
+// const geistMono = Geist_Mono({
+//   variable: "--font-geist-mono",
+//   subsets: ["latin"],
+// });
 
 export const metadata: Metadata = {
   title: "Birdy Talk",
@@ -27,13 +29,18 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        // className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         <AppRouterCacheProvider>
-        <div className={"layoutcontainer"}>
-        <DesktopHeader />
-        <main>{children}</main>
-        </div>
+          <AuthProvider>
+            <div className={"layoutcontainer"}>
+              <DesktopHeader />
+              <div className="main-content">
+                <SideNav />
+                <main>{children}</main>
+              </div>
+            </div>
+          </AuthProvider>
         </AppRouterCacheProvider>
       </body>
     </html>

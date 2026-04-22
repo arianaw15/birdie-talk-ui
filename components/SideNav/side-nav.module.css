@@ -1,0 +1,88 @@
+.container {
+    width: 300px;
+    background-color: white;
+    height: 100vh;
+    justify-content: center;
+    padding-top: 50px;
+}
+
+.profileImg {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    justify-self: center;
+    object-fit: cover;
+}
+
+.profileName {
+    font-family: var(--font-text);
+    font-size: 20px;
+    justify-self: center;
+    font-weight: 700;
+    margin-top: 20px;
+}
+
+.userName {
+    font-family: var(--font-text);
+    font-size: 16px;
+    justify-self: center;
+    color: var(--text-subtitle);
+    margin-top: 5px;
+    font-style: italic;
+    font-weight: 300
+}
+
+.socialStats {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+    margin-top: 20px;
+    /* border-top: 1px solid var(--text-description); */
+    /* border-bottom: 1px solid var(--text-description); */
+}
+
+.statGroup {
+    justify-items: center;
+    
+}
+
+.withDivider {
+    border-right: 1px solid var(--text-description);
+}
+
+.statNumber {
+    font-family: var(--font-text);
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--text-subtitle);
+}
+
+.statLabel {
+    font-family: var(--font-text);
+    font-size: 14px;
+    color: var(--text-description);
+    font-weight: 700;
+}
+
+.icon {
+    color: var(--theme-secondary);
+}
+
+.icon .birdIcon {
+    size: 50px;
+}
+
+.navButtons {
+    margin: 30px;
+    font-family: var(--font-text);
+    font-size: 16px;
+    color: var(--text-subtitle)
+}
+
+.logoutBtn {
+    justify-self: center;
+    bottom: 0;
+    position: absolute;
+    padding-bottom: 20px;
+    color: var(--text-description)
+}

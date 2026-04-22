@@ -3,9 +3,11 @@ import styles from './home.module.css';
 import { pageContent } from '@/public/textConstants';
 import Button from '@/components/Button/button';
 import { useRouter } from 'next/navigation';
+import { useAuth } from './auth-context';
 
-export default function Home({loggedIn = false}: {loggedIn?: boolean}) {
+export default function Home() {
 const router = useRouter();
+const { loggedIn } = useAuth();
 
 const handleSignupClick = (event: React.MouseEvent<HTMLButtonElement>) => {
     router.push('/signup')
