@@ -4,6 +4,10 @@
     height: 100vh;
     justify-content: center;
     padding-top: 50px;
+    position: fixed;
+    left: 0;
+    top: 0;
+    /* overflow-y: auto; */
 }
 
 .profileImg {

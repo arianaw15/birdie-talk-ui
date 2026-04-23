@@ -6,6 +6,7 @@ import { FaDove } from "react-icons/fa6";
 import { FaGear } from "react-icons/fa6";
 import { useRouter } from 'next/navigation';
 import { useAuth } from "../../app/auth-context";
+import { users } from '@/tests/example-data/profile';
 
 export default function SideNav() {
     const { loggedIn, setLoggedIn } = useAuth();
@@ -31,9 +32,9 @@ if (!loggedIn) {
 
 return(
     <div className={styles.container}>
-        <img className={styles.profileImg} src="/profile-example.jpg" alt="Profile" />
-        <div className={styles.profileName}>Ariana Winters</div>
-        <div className={styles.userName}>@arianawinters</div>
+        <img className={styles.profileImg} src={users[0].profilePicture} alt="Profile" />
+        <div className={styles.profileName}>{users[0].displayName}</div>
+        <div className={styles.userName}>{users[0].username}</div>
         <div className={styles.socialStats}>
             <div className={`${styles.statGroup} ${styles.withDivider}`}>
                 <Button variant={"stats"}>
