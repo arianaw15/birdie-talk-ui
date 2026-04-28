@@ -73,4 +73,15 @@ margin-top: 10px;
   text-transform: uppercase;
 }
 
+.button-action {
+  background-color: transparent;
+  font-family: var(--font-text);
+  font-size: 14px;
+  color: var(--text-subtitle);
+  width: auto;
+  padding: 0px;
+  display: flex;
+  gap: 5px;
+}
+
 
