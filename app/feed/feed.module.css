@@ -1,10 +1,10 @@
 .container {
-    width: calc(100% - 300px);
+    width: calc(100% - 250px);
     display: flex;
     flex-direction: column;
     align-items: center;
     /* padding: 20px; */
-    margin-left: 300px;
+    margin-left: 250px;
 }
 
 .newPostContainer {
@@ -108,4 +108,20 @@
     height: auto;
     justify-self: center;
     object-fit: cover;
+    margin-bottom: 20px;
+}
+
+.birdLink {
+    color: var(--text-link);
+    text-decoration: underline;
+}
+
+.postActions {
+    display: flex;
+    gap: 20px;
+    font-family: var(--font-text);
+    font-size: 14px;
+    color: var(--text-subtitle);
+    width: 100%;
+    justify-content: end;
 }

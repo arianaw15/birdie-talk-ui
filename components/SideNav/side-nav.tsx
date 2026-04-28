@@ -4,6 +4,7 @@ import styles from "./side-nav.module.css";
 import { FaRegNewspaper } from "react-icons/fa6";
 import { FaDove } from "react-icons/fa6";
 import { FaGear } from "react-icons/fa6";
+import { FaUserGroup } from "react-icons/fa6";
 import { useRouter } from 'next/navigation';
 import { useAuth } from "../../app/auth-context";
 import { users } from '@/tests/example-data/profile';
@@ -26,6 +27,10 @@ const handleBirdsClick = (event: React.MouseEvent<HTMLButtonElement>) => {
     router.push('/birds');
 }
 
+const handleFriendsClick = (event: React.MouseEvent<HTMLButtonElement>) => {
+    router.push('/friends');
+}
+
 if (!loggedIn) {
     return null; // Don't render the side nav if not logged in
 }
@@ -35,29 +40,10 @@ return(
         <img className={styles.profileImg} src={users[0].profilePicture} alt="Profile" />
         <div className={styles.profileName}>{users[0].displayName}</div>
         <div className={styles.userName}>{users[0].username}</div>
-        <div className={styles.socialStats}>
-            <div className={`${styles.statGroup} ${styles.withDivider}`}>
-                <Button variant={"stats"}>
-                <div className={styles.statNumber}>150</div>
-                <div className={styles.statLabel}>Following</div>
-                </Button>
-            </div>
-            <div className={`${styles.statGroup} ${styles.withDivider}`}>
-                <Button variant={"stats"}>
-                <div className={styles.statNumber}>150</div>
-                <div className={styles.statLabel}>Friends</div>
-                </Button>
-            </div>
-            <div className={styles.statGroup}>
-                <Button variant={"stats"}>
-                <div className={styles.statNumber}>150</div>
-                <div className={styles.statLabel}>Followers</div>
-                </Button>
-            </div>
-        </div>
         <div className={styles.navButtons}>
             <Button variant="icon" onClick={handleFeedClick}><FaRegNewspaper className={styles.icon} size={20}/>Bird Feed</Button>
             <Button variant="icon" onClick={handleBirdsClick}><FaDove className={`${styles.icon} ${styles.birdIcon}`} size={20}/>My Birds</Button>
+            <Button variant="icon" onClick={handleFriendsClick}><FaUserGroup className={styles.icon} size={20}/>Friends / Followers</Button>
             <Button variant="icon"><FaGear className={styles.icon} size={20}/>Settings</Button>
         </div>
         <div className={styles.logoutBtn}>

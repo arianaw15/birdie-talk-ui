@@ -15,6 +15,6 @@ export const users = [
   id: "123456782",
   username: "parksarts",
   displayName: "Parker Farnsworth",
-  profilePicture: "/profile-example.jpg"
+  profilePicture: "/profile-example-3.jpg"
 },
 ]
