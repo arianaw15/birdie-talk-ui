@@ -84,4 +84,21 @@ margin-top: 10px;
   gap: 5px;
 }
 
+.button-sideDrawer {
+  /* background-color: var(--theme-secondary);
+  color: white; */
+   display: flex;
+  gap: 10px;
+  align-items: center;
+   font-family: var(--font-text);
+  font-size: 14px;
+  font-weight: 600;
+  border: 1px solid #E4E6E7;
+  /* width: 76px;
+  padding: 5px 16px;
+  border-radius: 5px;
+ 
+  text-transform: uppercase; */
+}
+
 
