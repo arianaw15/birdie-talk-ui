@@ -25,6 +25,13 @@ export const pageContent = {
     title: "Life List",
     columns: [{key: "", value: ""}, {key: "commonName", value: "Common Name"}, {key: "scientificName", value: "Scientific Name"}, {key: "sightingsThisYear", value: "Sightings This Year"}, {key: "totalSightings", value: "Total Sightings"}, {key: "", value: ""},],
     columnHeaders: ["", "Common Name", "Scientific Name", "Sightings This Year", "Total Sightings", ""]
-  }
+  },
+   signup: {
+    mainTitle: "Sign Up",
+    formButtonText: "Sign Up"
+  },
+   createProfile: {
+    mainTitle: "Welcome!",
+   }
   // Add more pages/sections as needed
 };

@@ -15,8 +15,10 @@ export interface FormInfo {
 interface FormProps {
     formFields?: FormInfo[]
     handleClick?: (event: React.MouseEvent<HTMLButtonElement>) => void;
+    buttonText?: string;
+    buttonVariant?: string;
 }
-export default function Form({formFields, handleClick}: FormProps) {
+export default function Form({formFields, handleClick, buttonText, buttonVariant}: FormProps) {
 
 
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
@@ -38,7 +40,7 @@ export default function Form({formFields, handleClick}: FormProps) {
             </ div>
         )
        })}
-      <Button variant="google-login" type="submit">{pageContent.login.signInButton}</Button>
+      <Button variant={buttonVariant} type="submit">{buttonText}</Button>
     </form>
   );
 }

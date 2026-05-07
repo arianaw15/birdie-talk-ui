@@ -32,7 +32,7 @@ export default function Login() {
       <div className={styles.loginFormContainer}>
         <div className={styles.title}>{pageContent.login.mainTitle}</div>
         <div className={styles.form}>
-          <Form formFields={formFields} handleClick={handleSubmitClick} />
+          <Form formFields={formFields} handleClick={handleSubmitClick} buttonVariant="google-login" buttonText={pageContent.login.signInButton}/>
         </div>
       </div>
     </div>
