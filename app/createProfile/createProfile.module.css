@@ -1,5 +1,5 @@
 .container {
-    width: 100vw;
+      width: 100vw;
     background-color: var(--login-background);
     display: flex;
     justify-content: center;
@@ -7,7 +7,7 @@
     min-height: 100vh; /* Full viewport height */
 }
 
-.signupFormContainer {
+.createProfileContainer {
     background-color: white;
     width: fit-content;
     /* height: auto; */
@@ -27,9 +27,13 @@
     width: 454px;
 }
 
-.form {
+.addProfileImage {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background-color: var(--login-background);
     display: flex;
+    align-content: center;
     justify-content: center;
-    width: 100%;
-    width: 454px;
+    color: var(--text-subtitle);
 }

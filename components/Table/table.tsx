@@ -42,7 +42,7 @@ useEffect(() => {
         <select onChange={onPageSelect} className={styles.pageSize} defaultValue={itemsPerPage}>
           {defaultPerPage.map((number) => {
             return (
-              <option value={number}>{number}</option>
+              <option value={number} key={number}>{number}</option>
             )
           })}
         </select>

@@ -8,10 +8,12 @@ import { FaUserGroup } from "react-icons/fa6";
 import { useRouter } from 'next/navigation';
 import { useAuth } from "../../app/auth-context";
 import { users } from '@/tests/example-data/profile';
+import { usePathname } from "next/navigation";
 
 export default function SideNav() {
     const { loggedIn, setLoggedIn } = useAuth();
     const router = useRouter();
+    const pathname = usePathname();
 
 const handleClick = (event: React.MouseEvent<HTMLButtonElement>) => {
     console.log("Button clicked!", event);
@@ -31,8 +33,8 @@ const handleFriendsClick = (event: React.MouseEvent<HTMLButtonElement>) => {
     router.push('/friends');
 }
 
-if (!loggedIn) {
-    return null; // Don't render the side nav if not logged in
+if (!loggedIn || pathname==='/createProfile') {
+    return null; // Don't render the side nav if not logged in or the user is still creating their profile
 }
 
 return(
