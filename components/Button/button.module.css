@@ -1,9 +1,8 @@
 .button-component {
-  padding: 10px 20px;
+  /* padding: 10px 20px; */
   border: none;
   border-radius: 5px;
   cursor: pointer;
-  /* font-size: 1rem; */
   transition: background-color 0.3s ease;
 }
 
@@ -27,6 +26,7 @@ font-size:28px;
 font-family:"Inter", sans-serif;
 line-height:36px;
 margin-top: 10px;
+padding: 10px 20px;
 }
 
 .button-signup {
@@ -36,6 +36,7 @@ margin-top: 10px;
   height: 65px;
   color: var(--text-secondary);
   text-transform: uppercase;
+  padding: 10px 20px;
 }
 
 .button-login {
@@ -45,6 +46,7 @@ margin-top: 10px;
   height: 65px;
   color: black;
   text-transform: uppercase;
+  padding: 10px 20px;
 }
 
 .button-google-login {
@@ -53,12 +55,14 @@ margin-top: 10px;
   border-radius:10px;
   height: 40px;
   color: white;
+  padding: 10px 20px;
 }
 
 .button-icon {
   display: flex;
   gap: 10px;
   align-items: center;
+  padding: 10px 20px;
 }
 
 .button-post {
@@ -71,6 +75,7 @@ margin-top: 10px;
   font-size: 14px;
   font-weight: 600;
   text-transform: uppercase;
+  padding: 10px 20px;
 }
 
 .button-action {
@@ -82,11 +87,10 @@ margin-top: 10px;
   padding: 0px;
   display: flex;
   gap: 5px;
+  padding: 10px 20px;
 }
 
 .button-sideDrawer {
-  /* background-color: var(--theme-secondary);
-  color: white; */
    display: flex;
   gap: 10px;
   align-items: center;
@@ -94,11 +98,11 @@ margin-top: 10px;
   font-size: 14px;
   font-weight: 600;
   border: 1px solid #E4E6E7;
-  /* width: 76px;
-  padding: 5px 16px;
-  border-radius: 5px;
- 
-  text-transform: uppercase; */
+  padding: 10px 20px;
 }
 
-
+.button-smallIcon {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+}

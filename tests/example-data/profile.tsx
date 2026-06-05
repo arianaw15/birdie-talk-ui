@@ -3,7 +3,9 @@ export const users = [
   id: "123456789",
   username: "arianawinters",
   displayName: "Ariana Winters",
-  profilePicture: "/profile-example.jpg"
+  profilePicture: "/profile-example.jpg",
+  followers: 120,
+  following: 1000
 },
     {
   id: "123456781",

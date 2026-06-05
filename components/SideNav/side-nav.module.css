@@ -20,7 +20,6 @@
 .profileName {
     font: var(--font-title-secondary);
     justify-self: center;
-
     margin-top: 20px;
 }
 
